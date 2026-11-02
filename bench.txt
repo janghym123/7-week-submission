@@ -1,0 +1,9 @@
+Task 3 local proxy benchmark (not the course `bench.py`)
+Setup: 48 ports, 400 stations, capacity 64, 58,000 frames; deterministic seed 707. Sources and destinations were drawn from a Zipf(1.50) popularity distribution. A miss floods to the other 47 ports, yielding 46 wasted deliveries; known destinations use one port. Every destination was reachable, so missed deliveries were zero.
+
+                 wasted deliveries   delivered   missed   final entries
+FIFO baseline          420,578         58,000       0          64
+YourSwitch             207,966         58,000       0          64
+Reduction in wasted deliveries: 50.55%
+
+The assignment-specific `bench.py` was not provided in the available files. The only `bench.py` found was a Week 5 longest-prefix-match harness and is incompatible with Task 3. These measurements are a clearly labeled local approximation, not the assignment harness result; rerun the supplied Task 3 bench before submitting final benchmark numbers.

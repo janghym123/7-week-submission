@@ -1,0 +1,3 @@
+Task 2, Part A — ARP table before the ping
+
+Not captured. The user attempted `netsh interface ip delete arpcache`, but Windows reported that administrator privileges are required. The cache was therefore not cleared, and no pre-ping `arp -a` snapshot was saved. A2 and a measured before/after entry-count comparison cannot be established from this run.

@@ -1,0 +1,8 @@
+Task 2, Part A — after-ping result (table copy still needed)
+
+Observed in the user's PowerShell session:
+- `netsh interface ip delete arpcache` failed because administrator privileges are required.
+- `ping -n 3 192.168.0.1` succeeded: 3 sent, 3 received, 0% loss; reply times were 1 ms, 3 ms, and 1 ms.
+- The user then ran `arp -a | Out-File -Encoding utf8 .\arp-after.txt` while the prompt was at C:\Windows\System32.
+
+The ARP table text itself was not included in the chat, so this file records the observed command result rather than inventing table entries. Copy the generated C:\Windows\System32\arp-after.txt here to complete the table artifact.
